@@ -1,0 +1,165 @@
+body {
+    background: linear-gradient(-45deg, #387209, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 5s linear infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Navigation bar section */
+
+.navbar {
+  background: rgb(17, 15, 151);
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+}
+
+#intro {
+  color: black;
+  font-size: 60px;
+  font-family: Arial;
+  text-align: center;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar__links {
+  font-family: arial;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 125px;
+  text-decoration: none;
+  height: 100%;
+  transition: all 0.3s ease;
+}
+
+.navbar__links:hover {
+  color: red;
+  transition: all 0.3s ease;
+}
+
+.button {
+  font-family: arial;
+  display: flex;
+  padding: 10px 20px;
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: red;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+/* About me section */
+
+#description {
+  color: black;
+  font-family: Arial;
+  text-align: center;
+}
+
+/* Projects section */
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 100%;
+  padding: 10rem 0;
+}
+
+.projects h1 {
+  text-align: center;
+  font-family: arial;
+  font-size: 70px;
+}
+
+.projects__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.projects__card {
+  margin: 10px;
+  height: 425px;
+  width: 300px;
+  border-radius: 4px;
+  display: flex;
+  font-size: 20px;
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  color: black;
+  transition: 0.3s ease-in;
+}
+
+.projects__card button:hover {
+  cursor: pointer;
+}
+
+.projects__card:hover {
+  transform: scale(1.075);
+  transition: 0.3s ease-in;
+  cursor: pointer;
+}
+
+#banking__application {
+  text-align: justify;
+}
+
+.contacts {
+  font-family: arial;
+  font-size: 30px;
+}
+
+#bottom {
+  color: black;
+  font-size: 25px;
+  font-family: Arial;
+}
