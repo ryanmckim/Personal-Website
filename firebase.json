@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "ryankimcv",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
